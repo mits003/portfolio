@@ -7,42 +7,38 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.82.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Mitsuha Miyake">
-<meta name="keywords" content="qgis, relative elevation model, geography, dem">
-<meta name="description" content="When you have a DEM, digital elevation model, you will find mountains and valleys. Would you like to find out more? Let&rsquo;s make a relative elevation model.">
+<meta name="keywords" content="">
+<meta name="description" content="Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.">
 
 
-<meta property="og:description" content="When you have a DEM, digital elevation model, you will find mountains and valleys. Would you like to find out more? Let&rsquo;s make a relative elevation model.">
+<meta property="og:description" content="Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Reveal floodplain">
-<meta name="twitter:title" content="Reveal floodplain">
-<meta property="og:url" content="https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
-<meta property="twitter:url" content="https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
+<meta property="og:title" content="Install GDAL on macOS">
+<meta name="twitter:title" content="Install GDAL on macOS">
+<meta property="og:url" content="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+<meta property="twitter:url" content="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
 <meta property="og:site_name" content="Studio Null">
-<meta property="og:description" content="When you have a DEM, digital elevation model, you will find mountains and valleys. Would you like to find out more? Let&rsquo;s make a relative elevation model.">
-<meta name="twitter:description" content="When you have a DEM, digital elevation model, you will find mountains and valleys. Would you like to find out more? Let&rsquo;s make a relative elevation model.">
+<meta property="og:description" content="Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.">
+<meta name="twitter:description" content="Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2021-07-11T19:04:19">
+    <meta property="article:published_time" content="2021-07-11T21:50:43">
   
   
-    <meta property="article:modified_time" content="2021-07-11T19:04:19">
+    <meta property="article:modified_time" content="2021-07-11T21:50:43">
   
   
   
     
-      <meta property="article:section" content="cartography">
+      <meta property="article:section" content="programming">
     
   
   
     
       <meta property="article:tag" content="gis">
     
-      <meta property="article:tag" content="raster">
-    
-      <meta property="article:tag" content="dem">
-    
-      <meta property="article:tag" content="visualization">
+      <meta property="article:tag" content="gdal">
     
   
 
@@ -63,14 +59,14 @@
   <meta property="twitter:image" content="https://mits003.github.io/studio_null/img/portrate.jpg">
 
 
-    <title>Reveal floodplain</title>
+    <title>Install GDAL on macOS</title>
 
     <link rel="icon" href="https://mits003.github.io/studio_null/img/icon_3.png">
     
 
     
 
-    <link rel="canonical" href="https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
+    <link rel="canonical" href="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -215,16 +211,16 @@
         <article class="post" itemscope itemType="http://schema.org/BlogPosting">
           
           
-            <div class="post-header main-content-wrap text-left">
+            <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title" itemprop="headline">
-      Reveal floodplain
+      Install GDAL on macOS
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-07-11T19:04:19&#43;09:00">
+      <time itemprop="datePublished" datetime="2021-07-11T21:50:43&#43;09:00">
         
   
   
@@ -240,7 +236,7 @@
   
     <span>in</span>
     
-      <a class="category-link" href="https://mits003.github.io/studio_null/categories/cartography">cartography</a>
+      <a class="category-link" href="https://mits003.github.io/studio_null/categories/programming">programming</a>
     
   
 
@@ -250,37 +246,38 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>When you have a DEM, digital elevation model, you will find mountains and valleys. Would you like to find out more? Let&rsquo;s make a relative elevation model.</p>
-<h1 id="reveal-floodplain-with-elative-elevation-model">Reveal floodplain with elative elevation model</h1>
-<p>DEMs tell you a details of the geography of the area. REM, relative elevation model reveal the floodplain clearly.</p>
-<p><img src="https://mits003.github.io/studio_null/img/rem.png" alt="REM"></p>
-<h2 id="tools">Tools</h2>
+              <p>Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.</p>
+<p><img src="https://mits003.github.io/studio_null/img/gdal-icon.png" alt="gdal_icon"></p>
+<p>I used to stack install GDAL on macOS. Looked for third party installers or use QGIS environment. Now they provide official installer via pip! We can setup with pip and homebrew.</p>
+<h1 id="enviroment">Enviroment</h1>
 <ul>
-<li>QGIS</li>
+<li>OS: Mac OSX Catalina</li>
+<li>GDAL: 3.3.0</li>
+<li>Python: 3.3.6</li>
+<li>Homebrew: 3.1.12</li>
+<li>pip: 21.1.2</li>
 </ul>
-<h2 id="data-sources">Data sources</h2>
-<ul>
-<li>DEM: <a href="https://fgd.gsi.go.jp/download/menu.php">国土地理院基盤地図情報</a></li>
-<li>Centerline of streems: <a href="https://nlftp.mlit.go.jp/ksj/">国土数値情報</a></li>
-</ul>
-<h2 id="how-to-make">How to make</h2>
-<ol>
-<li>Get a DEM and a line data of a stream centerline</li>
-<li>Construct pointa along the stream line with a proper dense</li>
-<li>Extract DEM values to the points</li>
-<li>Run IDW tool and create an interpolated raster from points</li>
-<li>Calculate Original DEM minus interpolated raster</li>
-</ol>
-<h2 id="visualisation-tricks">Visualisation tricks</h2>
-<ol>
-<li>As a base layer, lay hillshade</li>
-<li>Select multiply mode For the REM layer</li>
-<li>Strech the color gradation range relatively small like -2 to 20m to highlight the floodplain</li>
-</ol>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="https://www.dnr.wa.gov/publications/ger_presentations_dmt_2016_coe.pdf">Floodplain visualization using lidar-derived relative elevation models</a></li>
-</ul>
+<h1 id="how-to-install">How to install</h1>
+<p>Excute these commands one by one. They emit a thousands of logs, just continue.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install gdal
+pip download GDAL
+tar -xpzf GDAL-&lt;version of GDAL&gt;.tar.gz
+cd GDAL-&lt;version of GDAL&gt;
+python setup.py build_ext --gdal-config /usr/local/Cellar/gdal/&lt;version of GDAL&gt;/bin/gdal-config
+python setup.py build
+python setup.py install
+</code></pre></div><p>If you are not sure which version of GDAL you downloaded, execute <code>ls /usr/local/Cellar/gdal/</code> and you will find it.</p>
+<h1 id="lets-check-it-out">Let&rsquo;s check it out</h1>
+<p>When you got the response of their virsion, they are all installed parfectly.</p>
+<h2 id="gdal">GDAL</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gdalinfo --version
+gdal_merge.py --version
+</code></pre></div><h2 id="python-bindings">Python bindings</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> osgeo <span style="color:#f92672">import</span> gdal
+<span style="color:#f92672">&gt;&gt;&gt;</span> gdal<span style="color:#f92672">.</span>VersionInfo()
+</code></pre></div><hr>
+<h1 id="special-thanks">Special thanks</h1>
+<p><a href="%22https://gist.github.com/kelvinn/f14f0fc24445a7994368f984c3e37724%22">kelvinn/InstallPythonGDAL.md</a></p>
               
             </div>
           </div>
@@ -294,11 +291,7 @@
                     
   <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/gis/">gis</a>
 
-  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/raster/">raster</a>
-
-  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/dem/">dem</a>
-
-  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/visualization/">visualization</a>
+  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/gdal/">gdal</a>
 
                   </div>
                 
@@ -311,7 +304,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/" data-tooltip="Install GDAL on macOS">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -319,7 +312,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/reveal-floodplain/" data-tooltip="Reveal floodplain">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -337,19 +330,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -397,7 +390,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/" data-tooltip="Install GDAL on macOS">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -405,7 +398,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/reveal-floodplain/" data-tooltip="Reveal floodplain">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -423,19 +416,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/07/reveal-floodplain/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -465,19 +458,19 @@
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Freveal-floodplain%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Finstall-gdal-on-macos%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Freveal-floodplain%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Finstall-gdal-on-macos%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Freveal-floodplain%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Finstall-gdal-on-macos%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -569,9 +562,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/mits003.github.io\/studio_null\/2021\/07\/reveal-floodplain\/';
+          this.page.url = 'https:\/\/mits003.github.io\/studio_null\/2021\/07\/install-gdal-on-macos\/';
           
-            this.page.identifier = '\/2021\/07\/reveal-floodplain\/'
+            this.page.identifier = '\/2021\/07\/install-gdal-on-macos\/'
           
         };
         (function() {
