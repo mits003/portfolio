@@ -32,7 +32,7 @@ publishDir = "docs"
 
 [author]
   name = "Mitsuha Miyake"
-  bio = "Geo enthusiust, spice lover"
+  bio = "Geo enthusiast, spice lover"
   job = "GIS engineer"
   location = "Japan, the Earth"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
