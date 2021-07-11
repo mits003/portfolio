@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Studio Null</title>
+    <link>https://mits003.github.io/studio_null/</link>
+    <description>Recent content on Studio Null</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Jul 2021 19:04:19 +0900</lastBuildDate><atom:link href="https://mits003.github.io/studio_null/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Relative elevation model</title>
+      <link>https://mits003.github.io/studio_null/2021/07/relative-elevation-model/</link>
+      <pubDate>Sun, 11 Jul 2021 19:04:19 +0900</pubDate>
+      
+      <guid>https://mits003.github.io/studio_null/2021/07/relative-elevation-model/</guid>
+      <description>&lt;p&gt;When you have a DEM, digital elevation model, you will find mountains and valleys. Would you like to find out more? Let&amp;rsquo;s make a relative elevation model.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
