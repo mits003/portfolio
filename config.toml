@@ -98,7 +98,7 @@ publishDir = "docs"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/mmits003"
 
-<<<<<<< HEAD
+
 # TODO add search algolia
 # [[menu.links]]
 #   weight = 4
@@ -110,8 +110,7 @@ publishDir = "docs"
 #   # class = "st-search-show-outputs"
 
 
-=======
->>>>>>> 3dc6ec0ed212bb824655248cfb1627dffe7fb20a
+
 [params]
   # Customize date format use to render blog post date, categories and other
   # You must use date format used by Go Time package https://golang.org/pkg/time/
@@ -133,11 +132,7 @@ publishDir = "docs"
   # If false it will flat categories.
   hierarchicalCategories = true
 
-<<<<<<< HEAD
   description = "Studio Null - works of mits003"
-=======
-  description = "Hugo tranquilpeak theme demo"
->>>>>>> 3dc6ec0ed212bb824655248cfb1627dffe7fb20a
 
   # Customization
   # Define the behavior of the sidebar
@@ -177,11 +172,8 @@ publishDir = "docs"
   autoThumbnailImage = true
 
   # Your favicon path, default is "/favicon.png"
-<<<<<<< HEAD
   favicon = "/img/icon_3.png"
-=======
-  # favicon = "/favicon.png"
->>>>>>> 3dc6ec0ed212bb824655248cfb1627dffe7fb20a
+
 
   # Header configuration
   # The link at the right of the header is customizable
@@ -224,18 +216,12 @@ publishDir = "docs"
     icon = "fa-google-plus"
     url = "https://plus.google.com/share?url=%s"
 
-<<<<<<< HEAD
+
 # TODO add search algolia
 #  [params.header.rightLink]
 #  class = "open-algolia-search"
 #  icon = "search"
 #  url = "/#search"
-=======
-  [params.header.rightLink]
-    class = ""
-    icon = ""
-    url = "/#about"
->>>>>>> 3dc6ec0ed212bb824655248cfb1627dffe7fb20a
 
   # Customize link of author avatar in sidebar
   # [params.sidebar.profile]
