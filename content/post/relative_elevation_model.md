@@ -1,5 +1,5 @@
 ---
-title: "Relative elevation model"
+title: "Reveal floodplain"
 date: 2021-07-11T19:04:19+09:00
 # autoThumbnailImage: false
 # thumbnailImagePosition: "left"
@@ -21,7 +21,7 @@ keywords:
 When you have a DEM, digital elevation model, you will find mountains and valleys. Would you like to find out more? Let's make a relative elevation model.
 <!--more-->
 
-# Relative elevation model
+# Reveal floodplain with elative elevation model
 
 DEMs tell you a details of the geography of the area. REM, relative elevation model reveal the floodplain clearly.
 
