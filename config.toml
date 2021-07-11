@@ -20,6 +20,7 @@ theme = "hugo-tranquilpeak-theme"
 disqusShortname = "studio null"
 paginate = 7
 canonifyurls = true
+publishDir = "docs"
 
 [permalinks]
   post = "/:year/:month/:slug/"
