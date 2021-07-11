@@ -1,10 +1,11 @@
 ---
 title: "Reveal floodplain"
 date: 2021-07-11T19:04:19+09:00
+metaAlignment: "center"
 # autoThumbnailImage: false
-# thumbnailImagePosition: "left"
-# thumbnailImage: /img/rem.jpg
-# coverImage: /img/rem.jpg
+thumbnailImagePosition: "left"
+thumbnailImage: img/rem.jpg
+# coverImage: img/rem.jpg
 categories:
 - cartography
 tags:
