@@ -98,7 +98,6 @@ publishDir = "docs"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
   url = "https://twitter.com/mmits003"
 
-
 # TODO add search algolia
 # [[menu.links]]
 #   weight = 4
@@ -108,7 +107,6 @@ publishDir = "docs"
 #   url = "/#search"
 #   class = "open-algolia-search"
 #   # class = "st-search-show-outputs"
-
 
 
 [params]
@@ -174,7 +172,6 @@ publishDir = "docs"
   # Your favicon path, default is "/favicon.png"
   favicon = "/img/icon_3.png"
 
-
   # Header configuration
   # The link at the right of the header is customizable
   # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
@@ -215,7 +212,6 @@ publishDir = "docs"
     name = "Google+"
     icon = "fa-google-plus"
     url = "https://plus.google.com/share?url=%s"
-
 
 # TODO add search algolia
 #  [params.header.rightLink]
