@@ -9,9 +9,16 @@ categories:
 ---
 <!--more-->
 
-{{< image classes="fancybox right clear" src="/img/whites_in_dark.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" title="White in dark" link="https://gohugo.io/content-management/shortcodes/">}}
-{{< image classes="fancybox left clear" src="/img/random_rectangles.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" title="Random rectangles" >}}
-{{< image classes="fancybox right clear" src="/img/multicircles_in_grids.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" title="Multicircles in grids" >}}
-{{< image classes="fancybox left clear" src="/img/shaking_squares.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" title="Shaking squares" >}}
-{{< image classes="fancybox right clear" src="/img/sketchsketchsketch.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" title="sketch sketch sketch" >}}
-{{< image classes="fancybox left clear" src="/img/shapes_in_grids.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" title="Shapes in grids" >}}
+|||
+|:---:|:---:|
+|[White in dark](https://github.com/mits003/p5js_works/tree/master/works/20200209/random_circle)|{{< image classes="fancybox center clear" src="/img/whites_in_dark.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" >}}|
+|||
+|Random rectangles|{{< image classes="fancybox center clear" src="/img/random_rectangles.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" >}}|
+|||
+|Multicircles in grids|{{< image classes="fancybox center clear" src="/img/multicircles_in_grids.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" >}}|
+|||
+|Shaking squares|{{< image classes="fancybox center clear" src="/img/shaking_squares.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" >}}|
+|||
+|sketch sketch sketch|{{< image classes="fancybox center clear" src="/img/sketchsketchsketch.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" >}}|
+|||
+|Shapes in grids|{{< image classes="fancybox center clear" src="/img/shapes_in_grids.png" group="group:p5js" thumbnail-width="300px" thumbnail-height="300px" >}}|
