@@ -8,38 +8,32 @@
 <meta name="generator" content="Hugo 0.82.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Mitsuha Miyake">
 <meta name="keywords" content="">
-<meta name="description" content="Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.">
+<meta name="description" content="">
 
 
-<meta property="og:description" content="Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.">
+<meta property="og:description" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Install GDAL on macOS">
-<meta name="twitter:title" content="Install GDAL on macOS">
-<meta property="og:url" content="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
-<meta property="twitter:url" content="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+<meta property="og:title" content="p5.js gallery">
+<meta name="twitter:title" content="p5.js gallery">
+<meta property="og:url" content="https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
+<meta property="twitter:url" content="https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
 <meta property="og:site_name" content="Studio Null">
-<meta property="og:description" content="Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.">
-<meta name="twitter:description" content="Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.">
+<meta property="og:description" content="">
+<meta name="twitter:description" content="">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2021-07-11T21:50:43">
+    <meta property="article:published_time" content="2021-07-12T03:59:52">
   
   
-    <meta property="article:modified_time" content="2021-07-11T21:50:43">
+    <meta property="article:modified_time" content="2021-07-12T03:59:52">
   
-  
-  
-    
-      <meta property="article:section" content="programming">
-    
   
   
     
-      <meta property="article:tag" content="gis">
+      <meta property="article:section" content="generative art">
     
-      <meta property="article:tag" content="gdal">
-    
+  
   
 
 
@@ -51,6 +45,9 @@
 
 
 
+  <meta property="og:image" content="https://mits003.github.io/studio_null/img/shaking_squares.png">
+  <meta property="twitter:image" content="https://mits003.github.io/studio_null/img/shaking_squares.png">
+
 
 
 
@@ -59,14 +56,14 @@
   <meta property="twitter:image" content="https://mits003.github.io/studio_null/img/portrate.jpg">
 
 
-    <title>Install GDAL on macOS</title>
+    <title>p5.js gallery</title>
 
     <link rel="icon" href="https://mits003.github.io/studio_null/img/icon_3.png">
     
 
     
 
-    <link rel="canonical" href="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+    <link rel="canonical" href="https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -214,19 +211,19 @@
             <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title" itemprop="headline">
-      Install GDAL on macOS
+      p5.js gallery
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-07-11T21:50:43&#43;09:00">
+      <time itemprop="datePublished" datetime="2021-07-12T03:59:52&#43;09:00">
         
   
   
   
   
-    11 July 2021
+    12 July 2021
   
 
       </time>
@@ -236,7 +233,7 @@
   
     <span>in</span>
     
-      <a class="category-link" href="https://mits003.github.io/studio_null/categories/programming">programming</a>
+      <a class="category-link" href="https://mits003.github.io/studio_null/categories/generative-art">generative art</a>
     
   
 
@@ -246,55 +243,275 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Stacked to install GDAL on macOS? Yes, I did. Now it&rsquo;s extreamly simple.</p>
-<p><img src="https://mits003.github.io/studio_null/img/gdal-icon.png" alt="gdal_icon"></p>
-<p>I used to stack install GDAL on macOS. Looked for third party installers or use QGIS environment. Now they provide official installer via pip! We can setup with pip and homebrew.</p>
-<h1 id="enviroment">Enviroment</h1>
-<ul>
-<li>OS: Mac OSX Catalina</li>
-<li>GDAL: 3.3.0</li>
-<li>Python: 3.3.6</li>
-<li>Homebrew: 3.1.12</li>
-<li>pip: 21.1.2</li>
-</ul>
-<h1 id="how-to-install">How to install</h1>
-<p>Excute these commands one by one. They emit a thousands of logs, just continue.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install gdal
-pip download GDAL
-tar -xpzf GDAL-&lt;version of GDAL&gt;.tar.gz
-cd GDAL-&lt;version of GDAL&gt;
-python setup.py build_ext --gdal-config /usr/local/Cellar/gdal/&lt;version of GDAL&gt;/bin/gdal-config
-python setup.py build
-python setup.py install
-</code></pre></div><p>If you are not sure which version of GDAL you downloaded, execute <code>ls /usr/local/Cellar/gdal/</code> and you will find it.</p>
-<h1 id="lets-check-it-out">Let&rsquo;s check it out</h1>
-<p>When you got the response of their virsion, they are all installed parfectly.</p>
-<h2 id="gdal">GDAL</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gdalinfo --version
-gdal_merge.py --version
-</code></pre></div><h2 id="python-bindings">Python bindings</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">from</span> osgeo <span style="color:#f92672">import</span> gdal
-<span style="color:#f92672">&gt;&gt;&gt;</span> gdal<span style="color:#f92672">.</span>VersionInfo()
-</code></pre></div><hr>
-<h1 id="special-thanks">Special thanks</h1>
-<p><a href="%22https://gist.github.com/kelvinn/f14f0fc24445a7994368f984c3e37724%22">kelvinn/InstallPythonGDAL.md</a></p>
+              <p>
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+<div class="figure right" >
+  
+    <a class="fancybox" href="https://mits003.github.io/studio_null/img/whites_in_dark.png" title="White in dark" data-fancybox-group="group:p5js">
+  
+    <img class="fig-img" src="https://mits003.github.io/studio_null/img/whites_in_dark.png" style="width: 300px;height: 300px;" alt="White in dark">
+  
+    </a>
+  
+   
+    <span class="caption">White in dark</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+<div class="figure left" >
+  
+    <a class="fancybox" href="https://mits003.github.io/studio_null/img/random_rectangles.png" title="Random rectangles" data-fancybox-group="group:p5js">
+  
+    <img class="fig-img" src="https://mits003.github.io/studio_null/img/random_rectangles.png" style="width: 300px;height: 300px;" alt="Random rectangles">
+  
+    </a>
+  
+   
+    <span class="caption">Random rectangles</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+<div class="figure right" >
+  
+    <a class="fancybox" href="https://mits003.github.io/studio_null/img/multicircles_in_grids.png" title="Multicircles in grids" data-fancybox-group="group:p5js">
+  
+    <img class="fig-img" src="https://mits003.github.io/studio_null/img/multicircles_in_grids.png" style="width: 300px;height: 300px;" alt="Multicircles in grids">
+  
+    </a>
+  
+   
+    <span class="caption">Multicircles in grids</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+<div class="figure left" >
+  
+    <a class="fancybox" href="https://mits003.github.io/studio_null/img/shaking_squares.png" title="Shaking squares" data-fancybox-group="group:p5js">
+  
+    <img class="fig-img" src="https://mits003.github.io/studio_null/img/shaking_squares.png" style="width: 300px;height: 300px;" alt="Shaking squares">
+  
+    </a>
+  
+   
+    <span class="caption">Shaking squares</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+<div class="figure right" >
+  
+    <a class="fancybox" href="https://mits003.github.io/studio_null/img/sketchsketchsketch.png" title="sketch sketch sketch" data-fancybox-group="group:p5js">
+  
+    <img class="fig-img" src="https://mits003.github.io/studio_null/img/sketchsketchsketch.png" style="width: 300px;height: 300px;" alt="sketch sketch sketch">
+  
+    </a>
+  
+   
+    <span class="caption">sketch sketch sketch</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+ 
+  
+  
+  
+  
+    
+  
+    
+      
+    
+  
+
+<div class="figure left" >
+  
+    <a class="fancybox" href="https://mits003.github.io/studio_null/img/shapes_in_grids.png" title="Shapes in grids" data-fancybox-group="group:p5js">
+  
+    <img class="fig-img" src="https://mits003.github.io/studio_null/img/shapes_in_grids.png" style="width: 300px;height: 300px;" alt="Shapes in grids">
+  
+    </a>
+  
+   
+    <span class="caption">Shapes in grids</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+</p>
               
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
-              
-                
-                
-                  <div class="post-footer-tags">
-                    <span class="text-color-light text-small">TAGGED IN</span><br/>
-                    
-  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/gis/">gis</a>
-
-  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/gdal/">gdal</a>
-
-                  </div>
-                
               
             
             <div class="post-actions-wrap">
@@ -304,7 +521,7 @@ gdal_merge.py --version
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/p5.js-gallery/" data-tooltip="p5.js gallery">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -312,7 +529,7 @@ gdal_merge.py --version
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/reveal-floodplain/" data-tooltip="Reveal floodplain">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/" data-tooltip="Install GDAL on macOS">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -330,19 +547,19 @@ gdal_merge.py --version
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -390,7 +607,7 @@ gdal_merge.py --version
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/p5.js-gallery/" data-tooltip="p5.js gallery">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -398,7 +615,7 @@ gdal_merge.py --version
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/reveal-floodplain/" data-tooltip="Reveal floodplain">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/" data-tooltip="Install GDAL on macOS">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -416,19 +633,19 @@ gdal_merge.py --version
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/07/install-gdal-on-macos/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/07/p5.js-gallery/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -458,19 +675,19 @@ gdal_merge.py --version
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Finstall-gdal-on-macos%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Fp5.js-gallery%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Finstall-gdal-on-macos%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Fp5.js-gallery%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Finstall-gdal-on-macos%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F07%2Fp5.js-gallery%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -562,9 +779,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/mits003.github.io\/studio_null\/2021\/07\/install-gdal-on-macos\/';
+          this.page.url = 'https:\/\/mits003.github.io\/studio_null\/2021\/07\/p5.js-gallery\/';
           
-            this.page.identifier = '\/2021\/07\/install-gdal-on-macos\/'
+            this.page.identifier = '\/2021\/07\/p5.js-gallery\/'
           
         };
         (function() {
