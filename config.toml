@@ -21,6 +21,7 @@ disqusShortname = "studio null"
 paginate = 7
 canonifyurls = true
 publishDir = "docs"
+googleAnalytics = "G-SH1HNWHWQR"
 
 [permalinks]
   post = "/:year/:month/:slug/"
