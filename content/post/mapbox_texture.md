@@ -11,6 +11,7 @@ tags:
 
 Mapboxスタイルのfillレイヤにテクスチャを入れて質感をもたせよう
 
+![textured_style](/img/textured_style.png)
 <!--more-->
 
 通常のスタイルだとベタ塗りしか選べない。パターンをfillレイヤに重ねることでアンティーク調にしたり独自の模様を持たせることができます。
@@ -26,16 +27,16 @@ fillレイヤに使いたいパターンをSVGで作る
 - SVGはレイヤに敷き詰められるときに余白が連続したりパターン詰まってしまわないよう、パターンの間隔と余白を計算して作成する
 
 今回は比較のために4種類のドットを用意。すべて32×32px
-![dot_32](/docs/img/dot_32.png)
-![dot_l](/docs/img/dot_l.png)
-![dot_s](/docs/img/dot_s.png)
-![dot_xs](/docs/img/dot_xs.png)
+![dot_32](/img/dot_32.png)
+![dot_l](/img/dot_l.png)
+![dot_s](/img/dot_s.png)
+![dot_xs](/img/dot_xs.png)
 
 ## スタイルに適用する
 - 作成したsvgをひとつのフォルダにまとめ、zip化
 - Symbolsにアップする
-![sprite_upload_page](/docs/img/sprite_upload_page.png)
-![sprite_upload_page](/docs/img/uploaded_sprite.png)
+![sprite_upload_page](/img/sprite_upload_page.png)
+![sprite_upload_page](/img/uploaded_sprite.png)
 
 - スタイルエディタを立ち上げてfillレイヤを作成する
   - 今回はwaterにテクスチャをつける
@@ -43,23 +44,28 @@ fillレイヤに使いたいパターンをSVGで作る
 waterのレイヤを新たに作成し、patternにsvgを指定する
 
 
-![create_layer](/docs/img/create_layer.png)
-![add_param_on_pattern](/docs/img/add_param_on_pattern.png)
+![create_layer](/img/create_layer.png)
+![add_param_on_pattern](/img/add_param_on_pattern.png)
 
 4つの結果
-![white_one](/docs/img/wone.png)
+![white_one](/img/wone.png)
 訳がわからないのでもう一枚青色のwaterのレイヤをつくっておく
 
 
 
-![blue_one](/docs/img/bone.png)
-![blue_l](/docs/img/bl.png)
-![blue_s](/docs/img/bs.png)
-![blue_xs](/docs/img/bxs.png)
+![blue_one](/img/bone.png)
+![blue_l](/img/bl.png)
+![blue_s](/img/bs.png)
+![blue_xs](/img/bxs.png)
 
 テクスチャっぽくなった！
 
 ちょっと暗いのでパターンのレイヤの透過度を調整してあげる
-![blue_xs](/docs/img/lightblue_xs.png)
+![blue_xs](/img/lightblue_xs.png)
+
+
+参考
+
+[Mapbox style specification - layers background](https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#background)
 
 (c)MapTiler (c)OpenStreetMap contributors
