@@ -19,7 +19,7 @@ keywords:
 - geography
 - dem
 ---
-When you have a DEM, digital elevation model, you will find mountains and valleys. Would you like to find out more? Let's make a relative elevation model.
+When you have a DEM, you will find mountains and valleys. Would you like to find out more? Let's make a relative elevation model.
 <!--more-->
 
 # Reveal floodplain with elative elevation model
