@@ -4,7 +4,7 @@ date: 2021-07-11T19:04:19+09:00
 metaAlignment: "center"
 # autoThumbnailImage: false
 thumbnailImagePosition: "left"
-thumbnailImage: img/rem.jpg
+thumbnailImage: img/rem_thumbnail.png
 # coverImage: img/rem.jpg
 categories:
 - cartography
@@ -26,7 +26,7 @@ When you have a DEM, you will find mountains and valleys. Would you like to find
 
 DEMs tell you a details of the geography of the area. REM, relative elevation model reveal the floodplain clearly.
 
-![REM](/img/rem.png)
+{{<image classes="fancybox center clear" src="/img/rem.png" thumbnail-width="80%" title="relative elevation model">}}
 
 ## Tools
 
