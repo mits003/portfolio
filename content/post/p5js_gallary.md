@@ -3,7 +3,7 @@ title: "p5.js gallery"
 date: 2021-07-12T03:59:52+09:00
 metaAlignment: "center"
 thumbnailImagePosition: "left"
-thumbnailImage: img/shaking_squares.png
+thumbnailImage: img/p5js_gallery/shaking_squares.png
 categories:
 - generative art
 keywords:

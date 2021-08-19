@@ -3,7 +3,7 @@ title: "Add a texture on Mapbox style"
 date: 2021-08-18T17:40:31+09:00
 metaAlignment: "center"
 thumbnailImagePosition: "left"
-thumbnailImage: img/textured_style_thumbnail.png
+thumbnailImage: img/mapbox_texture/textured_style_thumbnail.png
 categories:
 - cartography
 tags:
