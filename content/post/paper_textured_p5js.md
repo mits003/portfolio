@@ -9,18 +9,13 @@ categories:
 keywords:
 - creative coding
 ---
+This is a live interactive p5.js art work. Click and change the colors!
+<br>
+<br>
 
 <!--more-->
 
-<div class="creative_coding" style="text-align:center;">
-<iframe
-    width="300px"
-    height="300px"
-    src="https://mits003.github.io/studio_null/works/seasonal_paper_color/index.html"
-    frameborder="0"
-    sandbox="allow-scripts">
-</iframe>
-</div>
+{{% p5js_frame "seasonal_paper_color" %}}
 
 ```
 {{% include "/content/works/seasonal_paper_color/js/sketch.js" %}}
