@@ -33,7 +33,7 @@ googleAnalytics = "G-SH1HNWHWQR"
 
 [author]
   name = "Mitsuha Miyake"
-  bio = "Geo enthusiast, spice lover"
+  bio = "Geo enthusiast, creative coder, spice lover"
   job = "GIS engineer"
   location = "Japan, the Earth"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
@@ -231,3 +231,6 @@ googleAnalytics = "G-SH1HNWHWQR"
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]
   #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+
+[markup.goldmark.renderer]
+unsafe = true
