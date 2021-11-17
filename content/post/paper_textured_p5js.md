@@ -1,5 +1,5 @@
 ---
-title: "Paper textured p5.js"
+title: "Live interactive p5.js"
 date: 2021-11-17T06:43:39+09:00
 metaAlignment: "center"
 thumbnailImagePosition: "left"
