@@ -5,3 +5,19 @@ html, body {
   canvas {
     display: block;
   }
+
+.creative_coding {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 0;
+  padding-top: 60%;
+}
+.creative_coding iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

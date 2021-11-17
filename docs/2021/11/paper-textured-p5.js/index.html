@@ -7,39 +7,33 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.89.3 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Mitsuha Miyake">
-<meta name="keywords" content="">
-<meta name="description" content="Textured layer make your map more expressive. This is a step by step instruction to creat them.">
+<meta name="keywords" content="creative coding">
+<meta name="description" content="">
 
 
-<meta property="og:description" content="Textured layer make your map more expressive. This is a step by step instruction to creat them.">
+<meta property="og:description" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Add a texture on Mapbox style">
-<meta name="twitter:title" content="Add a texture on Mapbox style">
-<meta property="og:url" content="https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
-<meta property="twitter:url" content="https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
+<meta property="og:title" content="Paper textured p5.js">
+<meta name="twitter:title" content="Paper textured p5.js">
+<meta property="og:url" content="https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
+<meta property="twitter:url" content="https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
 <meta property="og:site_name" content="Studio Null">
-<meta property="og:description" content="Textured layer make your map more expressive. This is a step by step instruction to creat them.">
-<meta name="twitter:description" content="Textured layer make your map more expressive. This is a step by step instruction to creat them.">
+<meta property="og:description" content="">
+<meta name="twitter:description" content="">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2021-08-18T17:40:31">
+    <meta property="article:published_time" content="2021-11-17T06:43:39">
   
   
-    <meta property="article:modified_time" content="2021-08-18T17:40:31">
+    <meta property="article:modified_time" content="2021-11-17T06:43:39">
   
-  
-  
-    
-      <meta property="article:section" content="cartography">
-    
   
   
     
-      <meta property="article:tag" content="mapbox">
+      <meta property="article:section" content="generative art">
     
-      <meta property="article:tag" content="MapTiler">
-    
+  
   
 
 
@@ -51,8 +45,8 @@
 
 
 
-  <meta property="og:image" content="https://mits003.github.io/studio_null/img/mapbox_texture/textured_style_thumbnail.png">
-  <meta property="twitter:image" content="https://mits003.github.io/studio_null/img/mapbox_texture/textured_style_thumbnail.png">
+  <meta property="og:image" content="https://mits003.github.io/studio_null/img/image01_thumnail.png">
+  <meta property="twitter:image" content="https://mits003.github.io/studio_null/img/image01_thumnail.png">
 
 
 
@@ -62,14 +56,14 @@
   <meta property="twitter:image" content="https://mits003.github.io/studio_null/img/portrate.jpg">
 
 
-    <title>Add a texture on Mapbox style</title>
+    <title>Paper textured p5.js</title>
 
     <link rel="icon" href="https://mits003.github.io/studio_null/img/icon_3.png">
     
 
     
 
-    <link rel="canonical" href="https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
+    <link rel="canonical" href="https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -240,19 +234,19 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title" itemprop="headline">
-      Add a texture on Mapbox style
+      Paper textured p5.js
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-08-18T17:40:31&#43;09:00">
+      <time itemprop="datePublished" datetime="2021-11-17T06:43:39&#43;09:00">
         
   
   
   
   
-    18 August 2021
+    17 November 2021
   
 
       </time>
@@ -262,7 +256,7 @@ if (!doNotTrack) {
   
     <span>in</span>
     
-      <a class="category-link" href="https://mits003.github.io/studio_null/categories/cartography">cartography</a>
+      <a class="category-link" href="https://mits003.github.io/studio_null/categories/generative-art">generative art</a>
     
   
 
@@ -272,465 +266,67 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Textured layer make your map more expressive. This is a step by step instruction to creat them.</p>
-<p>Mapbox style provides high quality and full range cartographic expression. But usually you can only select solid painting for fill layer. In this post, you will learn how to make a texured fill layer on MapTiler Cloud. With this technique, you will make the map more expressive like paper like or fabric like for your web app.</p>
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-
- 
-  
-  
-  
-  
-    
-  
-    
-      
-    
-  
-
-<div class="figure center" >
-  
-    <a class="fancybox" href="https://mits003.github.io/studio_null/img/mapbox_texture/textured_style.png" title="textured style" data-fancybox-group="">
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/textured_style.png" style="width: 80%;" alt="textured style">
-  
-    </a>
-  
-   
-    <span class="caption">textured style</span>
-  
+              <div class="creative_coding" style="text-align:center;">
+<iframe
+    width="300px"
+    height="300px"
+    src="https://mits003.github.io/studio_null/works/seasonal_paper_color/index.html"
+    frameborder="0"
+    sandbox="allow-scripts">
+</iframe>
 </div>
+<pre tabindex="0"><code>
+function setup(){
+    let canvas = createCanvas(innerWidth, innerHeight);
 
-  <div style="clear:right;"></div>
+    canvas.position(0,0);
+    canvas.style('z-index','-1');
+    colorMode(HSB, 360, 100, 100, 1.0);
+    let BASE_H = random(0, 360);
 
-<h1 id="how-to-make-textured-layer">How to make textured layer</h1>
-<h2 id="make-svg-for-pattern">make SVG for pattern</h2>
-<p>First, make a SVG file for pattern which will be used in fill layer. I tried four size dots as a experiments that how it will appeared in the map. SVG file export is supported almost all of painting application, so use any app which is conftorble.</p>
-<p>There are two thigs that you should know.</p>
-<ul>
-<li>there&rsquo;s a limit of volume of uploading file of SVGs, which is ziped SVG files.</li>
-<li>Make sure the spaces and figures of SVG to prevent a continuous figures or unintended large spaces.</li>
-</ul>
-<p>These are the four dots I compared. Each SVG file is 32 by 32 px.</p>
-<p>
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
+    noStroke();
+    fill(BASE_H, 25, 65, 1.0);
+    rect(0, 0, width/2, height/2);
 
+    fill(BASE_H, 35, 75, 1.0);
+    rect(width/2, 0, width, height/2);
 
-<div class="figure fig-25" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/dot_32.png"  alt="a dot">
-  
-   
-    <span class="caption">a dot</span>
-  
-</div>
+    fill(BASE_H, 30, 40, 1.0);
+    rect(0, height/2, width/2, height);
 
-  <div style="clear:right;"></div>
+    fill(BASE_H, 15, 80, 1.0);
+    rect(width/2, height/2, width, height);
+
+}
 
 
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
+function texturize(base_h, density){
+    for(let i = 0; i &lt; density; i++) {
+        stroke(base_h,
+            BASE_S - random(-5, 8),
+            BASE_B - random(8),
+            random(75, 85));
 
+        let x1 = random(width);
+        let y1 = random(height);
+        let theta = random(360);
+        let segmentLength = random(2, 7);
+        let x2 = cos(theta) * segmentLength + x1;
+        let y2 = sin(theta) * segmentLength + y1;
 
-<div class="figure fig-25" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/dot_l.png"  alt="large dots">
-  
-   
-    <span class="caption">large dots</span>
-  
-</div>
+        line(x1, y1, x2, y2);
+    }
+}
 
-  <div style="clear:right;"></div>
-
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure fig-25" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/dot_s.png"  alt="medium dots">
-  
-   
-    <span class="caption">medium dots</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure fig-25" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/dot_xs.png"  alt="small dots">
-  
-   
-    <span class="caption">small dots</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-</p>
-<h2 id="add-patterns-to-a-layer">Add patterns to a layer</h2>
-<p>Access to MapTiler Cloud and let&rsquo;s create a map.</p>
-<p>To upload SVGs, files should be ziped. This zip file can uploaded at Symbol page as a seed of Sprite that is usually used for markers for POI. When the zip file successfully uploaded, the pattern will be displayed.</p>
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-
- 
-  
-  
-  
-  
-    
-  
-    
-      
-    
-  
-
-<div class="figure center" >
-  
-    <a class="fancybox" href="https://mits003.github.io/studio_null/img/mapbox_texture/uploaded_sprite.png" title="uploaded svg" data-fancybox-group="">
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/uploaded_sprite.png" style="width: 80%;" alt="uploaded svg">
-  
-    </a>
-  
-   
-    <span class="caption">uploaded svg</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-
-<p>Start the style editor and create a new fill layer. As an example I used water layer as a source layer but you can use any of polygon layer.</p>
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure center" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/create_layer.png"  alt="layer definition">
-  
-   
-    <span class="caption">layer definition</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-
-<p>You will find &ldquo;Pattern&rdquo; property in Paint property section. This edit field will suggest you which SVG would you like to use. Just select one.
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure center" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/add_param_on_pattern.png"  alt="add svg name at pattern property">
-  
-   
-    <span class="caption">add svg name at pattern property</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-</p>
-<p>This is the result of SVG of a dot specified os &ldquo;Pattern&rdquo; property. Looks not good though.</p>
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure center" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/wone.png" style="width: 80%;" alt="water layer with a dot pattern">
-  
-   
-    <span class="caption">water layer with a dot pattern</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-
-<p>Add a normal fill water layer under the pattern layer and set the &ldquo;Color&rdquo; blue. Looks nice. And these are the result of four dots SVGs. Pattern with small dots looks well textured.</p>
-<p>
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure fig-50" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/bone.png"  alt="a dot">
-  
-   
-    <span class="caption">a dot</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure fig-50" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/bl.png"  alt="large dots">
-  
-   
-    <span class="caption">large dots</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure fig-50" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/bs.png"  alt="medium dots">
-  
-   
-    <span class="caption">medium dots</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-  
-
-
-<div class="figure fig-50" >
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/bxs.png"  alt="small dots">
-  
-   
-    <span class="caption">small dots</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-</p>
-<p>For the final style, adjust &ldquo;Opacity&rdquo; at 0.3 to lighten the map.</p>
-
- 
-  
-  
-  
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-
- 
-  
-  
-  
-  
-    
-  
-    
-      
-    
-  
-
-<div class="figure center" >
-  
-    <a class="fancybox" href="https://mits003.github.io/studio_null/img/mapbox_texture/lightblue_xs.png" title="small dots" data-fancybox-group="">
-  
-    <img class="fig-img" src="https://mits003.github.io/studio_null/img/mapbox_texture/lightblue_xs.png" style="width: 80%;" alt="small dots">
-  
-    </a>
-  
-   
-    <span class="caption">small dots</span>
-  
-</div>
-
-  <div style="clear:right;"></div>
-
-<h2 id="note">Note</h2>
-<p>There are some limitation when you use pattern layer in Mapbox style.</p>
-<ul>
-<li>When you use &ldquo;Pattern&rdquo; property, any other Paint property will not work except &ldquo;Opacity&rdquo;.
-<ul>
-<li>If you want add colored background on same source layer, add another layer and set &ldquo;Color&rdquo;.</li>
-</ul>
-</li>
-<li>Color of pattern can&rsquo;t be changed on mapbox style. Make SVG with dark color and adjust with &ldquo;Opacity&rdquo;.</li>
-<li>The data driven specification is not implemented yet nor the mapbox style expression will not work. Which means if you want to change the pattern size along zoom levels, just create layers for each zoom levels.</li>
-</ul>
-<hr>
-<p>I hope I will find expressive maps!</p>
-<p>References
-<a href="https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#background">Mapbox style specification - layers background</a></p>
-<p>(c)MapTiler (c)OpenStreetMap contributors</p>
+function mouseClicked(){
+    window.location.reload();
+}
+</code></pre>
               
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
-              
-                
-                
-                  <div class="post-footer-tags">
-                    <span class="text-color-light text-small">TAGGED IN</span><br/>
-                    
-  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/mapbox/">mapbox</a>
-
-  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/maptiler/">MapTiler</a>
-
-                  </div>
-                
               
             
             <div class="post-actions-wrap">
@@ -740,7 +336,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/" data-tooltip="Paper textured p5.js">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -748,7 +344,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/p5.js-gallery/" data-tooltip="p5.js gallery">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/" data-tooltip="Add a texture on Mapbox style">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -766,19 +362,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -826,7 +422,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/" data-tooltip="Paper textured p5.js">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -834,7 +430,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/07/p5.js-gallery/" data-tooltip="p5.js gallery">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/" data-tooltip="Add a texture on Mapbox style">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -852,19 +448,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/08/add-a-texture-on-mapbox-style/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://mits003.github.io/studio_null/2021/11/paper-textured-p5.js/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -894,19 +490,19 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F08%2Fadd-a-texture-on-mapbox-style%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F11%2Fpaper-textured-p5.js%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F08%2Fadd-a-texture-on-mapbox-style%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F11%2Fpaper-textured-p5.js%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F08%2Fadd-a-texture-on-mapbox-style%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fmits003.github.io%2Fstudio_null%2F2021%2F11%2Fpaper-textured-p5.js%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -998,9 +594,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/mits003.github.io\/studio_null\/2021\/08\/add-a-texture-on-mapbox-style\/';
+          this.page.url = 'https:\/\/mits003.github.io\/studio_null\/2021\/11\/paper-textured-p5.js\/';
           
-            this.page.identifier = '\/2021\/08\/add-a-texture-on-mapbox-style\/'
+            this.page.identifier = '\/2021\/11\/paper-textured-p5.js\/'
           
         };
         (function() {

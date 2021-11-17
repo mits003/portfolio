@@ -1,33 +1,27 @@
 ---
-title: "Paper textured p5js"
+title: "Paper textured p5.js"
 date: 2021-11-17T06:43:39+09:00
-draft: false
+metaAlignment: "center"
+thumbnailImagePosition: "left"
+thumbnailImage: img/image01_thumnail.png
+categories:
+- generative art
+keywords:
+- creative coding
 ---
 
-{{<image classes="fig-25 clear" src="/content/works/seasonal_paper_color/img/image01.png" title="a dot">}}
+<!--more-->
+
+<div class="creative_coding" style="text-align:center;">
+<iframe
+    width="300px"
+    height="300px"
+    src="https://mits003.github.io/studio_null/works/seasonal_paper_color/index.html"
+    frameborder="0"
+    sandbox="allow-scripts">
+</iframe>
+</div>
 
 ```
 {{% include "/content/works/seasonal_paper_color/js/sketch.js" %}}
 ```
-
-
-aaaa
-
-<iframe
-    width="100%"
-    height="100%"
-    src="http://localhost:1313/studio_null/content/works/seasonal_paper_color/index.html"
-    frameborder="1"
-    sandbox="allow-scripts">
-</iframe>
-
-<iframe
-  title="p5.js demo"
-  src="https://nnamm.com/_creativecoding/180924/demo1.html"
-  width="100%"
-  height="100%"
-  frameborder="0"
-  sandbox="allow-scripts">
-</iframe>
-
-aaaa
