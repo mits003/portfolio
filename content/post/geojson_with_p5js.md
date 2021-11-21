@@ -2,7 +2,7 @@
 title: "GeoJSON with p5js"
 date: 2021-11-21T09:39:49+09:00
 metaAlignment: "center"
-thumbnailImagePosition: "right"
+thumbnailImagePosition: "left"
 thumbnailImage: img/geojson_p5js/geojson_p5js_thumbnail.png
 categories:
 - generative art

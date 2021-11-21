@@ -3,7 +3,7 @@ title: "Live interactive p5.js"
 date: 2021-11-17T06:43:39+09:00
 metaAlignment: "center"
 thumbnailImagePosition: "left"
-thumbnailImage: img/image01_thumnail.png
+thumbnailImage: img/interactive_thumbnail.png
 categories:
 - generative art
 tags:
