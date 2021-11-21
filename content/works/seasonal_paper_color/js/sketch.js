@@ -20,6 +20,7 @@ function setup(){
 
 }
 
-function mouseClicked(){
+function touchStarted() {
     window.location.reload();
+    return false;
 }
