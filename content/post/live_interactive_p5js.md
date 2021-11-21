@@ -6,7 +6,7 @@ thumbnailImagePosition: "left"
 thumbnailImage: img/image01_thumnail.png
 categories:
 - generative art
-tag:
+tags:
 - creative coding
 keywords:
 - creative coding
@@ -21,6 +21,6 @@ This is a live interactive p5.js art work. Click and change the colors!
 
 {{% p5js_frame "seasonal_paper_color" %}}
 
-```
+```JS
 {{% include "/content/works/seasonal_paper_color/js/sketch.js" %}}
 ```

@@ -35,6 +35,10 @@
     
   
   
+    
+      <meta property="article:tag" content="creative coding">
+    
+  
 
 
 <meta name="twitter:card" content="summary">
@@ -278,38 +282,48 @@ if (!doNotTrack) {
         sandbox="allow-scripts">
     </iframe>
 </div>
-<pre tabindex="0"><code>
-function setup(){
-    let canvas = createCanvas(innerWidth, innerHeight);
-    canvas.position(0,0);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JS" data-lang="JS">
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setup</span>(){
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">canvas</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createCanvas</span>(<span style="color:#a6e22e">innerWidth</span>, <span style="color:#a6e22e">innerHeight</span>);
+    <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">position</span>(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0</span>);
 
-    colorMode(HSB, 360, 100, 100, 1.0);
-    let BASE_H = random(0, 360);
+    <span style="color:#a6e22e">colorMode</span>(<span style="color:#a6e22e">HSB</span>, <span style="color:#ae81ff">360</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">1.0</span>);
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">BASE_H</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">random</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">360</span>);
 
-    noStroke();
-    fill(BASE_H, 25, 65, 1.0);
-    rect(0, 0, width/2, height/2);
+    <span style="color:#a6e22e">noStroke</span>();
+    <span style="color:#a6e22e">fill</span>(<span style="color:#a6e22e">BASE_H</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">65</span>, <span style="color:#ae81ff">1.0</span>);
+    <span style="color:#a6e22e">rect</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">width</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">height</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>);
 
-    fill(BASE_H, 35, 75, 1.0);
-    rect(width/2, 0, width, height/2);
+    <span style="color:#a6e22e">fill</span>(<span style="color:#a6e22e">BASE_H</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">75</span>, <span style="color:#ae81ff">1.0</span>);
+    <span style="color:#a6e22e">rect</span>(<span style="color:#a6e22e">width</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">width</span>, <span style="color:#a6e22e">height</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>);
 
-    fill(BASE_H, 30, 40, 1.0);
-    rect(0, height/2, width/2, height);
+    <span style="color:#a6e22e">fill</span>(<span style="color:#a6e22e">BASE_H</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">1.0</span>);
+    <span style="color:#a6e22e">rect</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">height</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">width</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">height</span>);
 
-    fill(BASE_H, 15, 80, 1.0);
-    rect(width/2, height/2, width, height);
+    <span style="color:#a6e22e">fill</span>(<span style="color:#a6e22e">BASE_H</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">1.0</span>);
+    <span style="color:#a6e22e">rect</span>(<span style="color:#a6e22e">width</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">height</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">width</span>, <span style="color:#a6e22e">height</span>);
 
 }
 
-function mouseClicked(){
-    window.location.reload();
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">mouseClicked</span>(){
+    window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">reload</span>();
 }
-</code></pre>
+</code></pre></div>
               
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://mits003.github.io/studio_null/tags/creative-coding/">creative coding</a>
+
+                  </div>
+                
               
             
             <div class="post-actions-wrap">
@@ -319,7 +333,7 @@ function mouseClicked(){
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/11/geojson-with-p5js/" data-tooltip="GeoJSON with p5js">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -405,7 +419,7 @@ function mouseClicked(){
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://mits003.github.io/studio_null/2021/11/geojson-with-p5js/" data-tooltip="GeoJSON with p5js">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>

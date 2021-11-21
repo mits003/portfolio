@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Studio Null</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Nov 2021 06:43:39 +0900</lastBuildDate><atom:link href="https://mits003.github.io/studio_null/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 09:39:49 +0900</lastBuildDate><atom:link href="https://mits003.github.io/studio_null/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GeoJSON with p5js</title>
+      <link>https://mits003.github.io/studio_null/2021/11/geojson-with-p5js/</link>
+      <pubDate>Sun, 21 Nov 2021 09:39:49 +0900</pubDate>
+      
+      <guid>https://mits003.github.io/studio_null/2021/11/geojson-with-p5js/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a creative coder and a GIS engineer then what I wanted to do is creative coding with GIS data.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Live interactive p5.js</title>
       <link>https://mits003.github.io/studio_null/2021/11/live-interactive-p5.js/</link>
