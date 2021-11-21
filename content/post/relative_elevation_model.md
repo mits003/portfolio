@@ -5,7 +5,7 @@ metaAlignment: "center"
 # autoThumbnailImage: false
 thumbnailImagePosition: "left"
 thumbnailImage: img/rem_thumbnail.png
-# coverImage: img/rem.jpg
+coverImage: img/rem.jpg
 categories:
 - cartography
 tags:
